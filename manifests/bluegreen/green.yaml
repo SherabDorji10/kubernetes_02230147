@@ -8,7 +8,7 @@ metadata:
   annotations:
     kubernetes.io/change-cause: "green slot 02230129-1.1.0"
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: notice-board
