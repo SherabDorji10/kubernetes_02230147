@@ -2,7 +2,7 @@ import os, time, json
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 START   = time.time()
-VERSION = os.environ.get("APP_VERSION", "02230129-1.0.0")
+VERSION = os.environ.get("APP_VERSION", "02230147-1.0.0")
 PINNED  = os.environ.get("FEATURE_PINNED", "false").lower() == "true"
 POD     = os.environ.get("HOSTNAME", "unknown")
 

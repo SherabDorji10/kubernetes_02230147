@@ -4,7 +4,7 @@ apiVersion: v1
 kind: ResourceQuota
 metadata:
   name: nb-quota
-  namespace: nb-02230129
+  namespace: nb-02230147
 spec:
   hard:
     requests.cpu: "1" # 6 app pods (600m) + monitor (10m) + surge fits

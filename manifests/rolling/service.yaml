@@ -4,7 +4,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: notice-board
-  namespace: nb-02230129
+  namespace: nb-02230147
 spec:
   selector:
     app: notice-board
@@ -16,7 +16,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: notice-board-ext
-  namespace: nb-02230129
+  namespace: nb-02230147
 spec:
   type: NodePort
   selector:

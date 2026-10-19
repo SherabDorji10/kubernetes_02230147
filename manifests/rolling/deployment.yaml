@@ -4,9 +4,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: notice-board
-  namespace: nb-02230129
+  namespace: nb-02230147
   annotations:
-    kubernetes.io/change-cause: "initial release 02230129-1.0.0"
+    kubernetes.io/change-cause: "initial release 02230147-1.0.0"
 spec:
   replicas: 3
   selector:
@@ -16,11 +16,11 @@ spec:
     metadata:
       labels:
         app: notice-board
-        version: "02230129-1.0.0" # label for E3.1 label selectors
+        version: "02230147-1.0.0" # label for E3.1 label selectors
     spec:
       containers:
         - name: api
-          image: notice-board:02230129-1.0.0
+          image: notice-board:02230147-1.0.0
           imagePullPolicy: Never # loaded via kind; never pull from a registry
           ports:
             - name: http
